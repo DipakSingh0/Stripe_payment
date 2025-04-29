@@ -20,6 +20,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child:
         MaterialButton(
+        color: Colors.blue,
         onPressed: () async {
           try {
             await StripeService.instance.makePayment();
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
             );
           }
         },
-        child: Text("Purchase"),
+        child: Text("Purchase" , style: TextStyle(color: Colors.white , fontSize: 18),),
       )
         //  MaterialButton(
         //   onPressed: () {
